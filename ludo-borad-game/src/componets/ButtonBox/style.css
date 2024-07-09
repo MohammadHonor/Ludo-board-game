@@ -1,0 +1,20 @@
+.squar-box{
+    width: 20rem;
+    height: 20rem;
+    border: .25rem solid blue;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    
+    
+
+}
+
+.key{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: blue;
+    position: relative;
+    left: 2.9rem
+}

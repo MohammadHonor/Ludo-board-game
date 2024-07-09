@@ -1,0 +1,26 @@
+#clm1{
+    width: auto;
+    height: 15rem;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0;
+    gap: 0;
+    
+    
+}
+.item1{
+    width: auto;
+    height: auto;
+    display: flex;
+    border: 0;
+    gap: 0;
+}
+
+.sml-container1{
+    padding: 0;
+    margin: 0;
+    width: 3.33rem;
+    height: 5rem;
+    border:  1px solid;
+}

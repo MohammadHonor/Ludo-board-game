@@ -1,0 +1,25 @@
+#clm{
+    width: 15rem;
+    height: auto ;
+    border: 1px solid black;
+   display: flex;
+   flex-direction: column;
+   
+    
+    
+}
+.item{
+    width: auto;
+    height: auto;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.sml-container{
+    padding: 0;
+    margin: 0;
+    width:5rem; 
+    height:3.33rem; 
+    border:  1px solid;
+}
