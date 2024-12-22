@@ -1,25 +1,27 @@
 #clm{
-    width: 15rem;
-    height: auto ;
-    border: 1px solid black;
-   display: flex;
-   flex-direction: column;
-   
-    
-    
+    width: 27%;
+    height: 100% ;
+    /* border: 1px solid blue ; */
+    display:grid;
+    grid-auto-flow:columns;
+    grid-template-columns:auto auto auto;
+    /* place-items:center; */
+
 }
-.item{
+/* .item{
     width: auto;
     height: auto;
     display: flex;
-    padding: 0;
-    margin: 0;
-}
+} */
 
 .sml-container{
-    padding: 0;
-    margin: 0;
-    width:5rem; 
-    height:3.33rem; 
-    border:  1px solid;
+    display:flex;
+    border:1px solid black;
+    width:auto;
+    height:auto;
+    justify-items:center;
+    justify-content:center;
+
+    
+
 }

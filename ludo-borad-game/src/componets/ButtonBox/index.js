@@ -1,12 +1,13 @@
 import './style.css';
 
-function Box(probs){
+function Box(props){
+    // console.log(props.box)
     return(
-        <><div class="squar-box">
-            <p class={probs.item}></p>
-            <p class={probs.item}></p>
-            <p class={probs.item}></p>
-            <p class={probs.item}></p>
+        <><div class={props.box}>
+            <div class={props.item}></div>
+            <div class={props.item}></div>
+            <div class={props.item}></div>
+            <div class={props.item}></div>
         </div>
         </>
     )

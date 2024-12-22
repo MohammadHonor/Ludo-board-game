@@ -1,11 +1,10 @@
 .mid-box{
-    width: 0rem;
-    height: 0rem;
-     border: 10rem solid white; 
-    border-left: 7.5rem solid blue;
-    border-bottom: 7.5rem solid yellow;
-    border-right: 7.5rem solid green;
-    border-top: 7.5rem solid red;
+
+    /* border: 15rem solid white;   */
+    border-left:4rem solid blue; 
+    border-bottom:4rem solid yellow;
+    border-right:4rem solid green;
+    border-top: 4rem solid red; 
 
 }
 

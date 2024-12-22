@@ -1,20 +1,71 @@
-.squar-box{
-    width: 20rem;
-    height: 20rem;
-    border: .25rem solid blue;
+.box1{
+    width: 40%;
+    border: 2rem solid blue;
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
+    justify-items:center;
     
-    
-
 }
-
-.key{
-    width: 5rem;
-    height: 5rem;
+.box2{
+    width: 40%;
+    border: 2rem solid red;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-items:center;
+    
+}
+.box3{
+    width: 40%;
+    border: 2rem solid yellow;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-items:center;
+    
+}
+.box4{
+    width: 40%;
+    border: 2rem solid green;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-items:center;
+    
+}
+.key1{
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     background-color: blue;
     position: relative;
-    left: 2.9rem
+    /* left: 2.9rem */
+}
+
+.key2{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    /* left: 2.9rem */
+}
+
+.key3{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: yellow;
+    position: relative;
+    /* left: 2.9rem */
+}
+
+.key4{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: green;
+    position: relative;
+    /* left: 2.9rem */
 }
