@@ -1,5 +1,5 @@
 #clm{
-    width: 27%;
+    width: 30%;
     height: 100% ;
     /* border: 1px solid blue ; */
     display:grid;
@@ -24,4 +24,11 @@
 
     
 
+}
+
+#red-color-bg{
+    background-color:red;
+}
+#yellow-color-bg{
+    background-color:yellow;
 }

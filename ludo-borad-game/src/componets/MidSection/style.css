@@ -1,10 +1,22 @@
 .mid-box{
-
-    /* border: 15rem solid white;   */
-    border-left:4rem solid blue; 
-    border-bottom:4rem solid yellow;
-    border-right:4rem solid green;
-    border-top: 4rem solid red; 
+    /* display:flex; */
+    /* weight:20%;
+    height:100%; */
+    /* border: 2px solid red;  
+    border-left:2rem solid blue; 
+    border-bottom:2rem solid yellow;
+    border-right:2rem solid green;
+    border-top: 2rem solid red;  */
+    border:1px solid green;
+    width: 22%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* border-style: solid; */
+    /* border-left-weight:10px; */
+    /* border-color: blue yellow green red;  */
 
 }
 
