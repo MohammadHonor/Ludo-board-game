@@ -1,0 +1,10 @@
+.diceBox{
+  display:flex;
+  height:3rem;
+  width:3rem;
+  border:2px solid red;
+  background-color:white;
+  border-radius:8px;
+  justify-content:center;
+  place-items:center;
+}

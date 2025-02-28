@@ -1,5 +1,5 @@
 .box1{
-    width: 40%;
+    width:40%;
     border: 2rem solid blue;
     display: grid;
     grid-template-columns: auto auto;
@@ -8,7 +8,7 @@
     
 }
 .box2{
-    width: 40%;
+    width:40%;
     border: 2rem solid red;
     display: grid;
     grid-template-columns: auto auto;
@@ -17,16 +17,15 @@
     
 }
 .box3{
-    width: 40%;
+    width:40%;
     border: 2rem solid yellow;
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
     justify-items:center;
-    
 }
 .box4{
-    width: 40%;
+    width:40%;
     border: 2rem solid green;
     display: grid;
     grid-template-columns: auto auto;
@@ -35,37 +34,81 @@
     
 }
 .key1{
-    width: 3rem;
-    height: 3rem;
+    width:2rem;
+    height: 2rem;
     border-radius: 50%;
-    background-color: blue;
-    position: relative;
+    /* background-color: blue; */
+    border:2px solid blue;
+    display:flex;
+    place-items:center;
+    justify-content:center;
     /* left: 2.9rem */
 }
 
 .key2{
-    width: 3rem;
-    height: 3rem;
+    width:2rem;
+    height: 2rem;
     border-radius: 50%;
-    background-color: red;
-    position: relative;
+    /* background-color: red;
+    position: relative; */
     /* left: 2.9rem */
+    border:2px solid red;
+    display:flex;
+    justify-content:center;
+    place-items:center;
 }
 
 .key3{
-    width: 3rem;
-    height: 3rem;
+    width:2rem;
+    height: 2rem;
     border-radius: 50%;
-    background-color: yellow;
-    position: relative;
+    /* background-color: yellow;
+    position: relative; */
     /* left: 2.9rem */
+    border:2px solid yellow;
+    display:flex;
+    justify-content:center;
+    place-items:center;
 }
 
 .key4{
-    width: 3rem;
-    height: 3rem;
+    width:2rem;
+    height: 2rem;
     border-radius: 50%;
-    background-color: green;
-    position: relative;
+    /* background-color: green;
+    position: relative; */
     /* left: 2.9rem */
+    border:2px solid green;
+    display:flex;
+    justify-content:center;
+    place-items:center;
+}
+.blue-button{
+    width:1.5rem;
+    height:1.5rem;
+    color:blue;
+    
+    /* box-shadow:10px 10px 10px gray; */
+    /* background-opacity:0; */
+    /* border:2px solid red; */
+    
+}
+
+.yellow-button{
+    width:1.5rem;
+    height:1.5rem;
+    color:yellow;
+    
+}
+.green-button{
+    width:1.5rem;
+    height:1.5rem;
+    color:green;
+    
+}
+.red-button{
+    width:1.5rem;
+    height:1.5rem;
+    color:red;
+    
 }
