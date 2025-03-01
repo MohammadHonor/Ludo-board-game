@@ -84,13 +84,16 @@
     place-items:center;
 }
 .blue-button{
+    fill:blue;
     width:1.5rem;
     height:1.5rem;
-    color:blue;
-    
+    /* color:blue;
+    background-color:red; */
+
+    border-radius:50%;
     /* box-shadow:10px 10px 10px gray; */
     /* background-opacity:0; */
-    /* border:2px solid red; */
+    border:2px solid red;
     
 }
 

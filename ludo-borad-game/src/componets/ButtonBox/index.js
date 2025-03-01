@@ -1,40 +1,42 @@
 import './style.css';
-// import image from "../../public/red-icon.avif"
 import { ImLocation2 } from "react-icons/im";
+import { BoardContext } from '../../Context.js/ludoBoardContext';
+import { useContext, useEffect } from 'react';
+
 function Box(props) {
-    // console.log("boxxx",props.image)
-    const moveKey = ()=>{
-        // console.log(props.image)
-  }
-  // console.log(props)
-    return(
-        <div className={props.box} >
-            {
-                [...Array(4)].map((_,index)=>{
-                return (
-                <div key={index} className={props.item}>
-                    <ImLocation2 onClick={moveKey} className={props.image} />
-                    {/* <img src='icons8-location.gif' className={props.image } /> */}
-                    {/* <a href="https://www.flaticon.com/free-icons/location" title="location icons"
-                    onClick={moveKey} className={props.image} */}
-                    {/* ></a> */}
-                </div>
-                )})
+  const { boardState, setBoardState } = useContext(BoardContext);
+
+  const moveKey = (index) => {
+    console.log("before change ", boardState, index, props.image);
+
+    if (props.image === "red-button" && index === 1) {
+      setBoardState((prevState) => {
+        const updatedState = {
+          ...prevState,
+          red_button: {
+            ...prevState.red_button,
+            first_icon: {
+              ...prevState.red_button.first_icon,
+              x_coordinate: prevState.red_button.first_icon.x_coordinate + 20
             }
-            {/* <div class={props.item}>
-                <ImLocation2 onClick={moveKey} className={props.image}/>
-            </div>
-            <div class={props.item}>
-                <ImLocation2 onClick={moveKey} className={props.image}/>
-            </div>
-            <div class={props.item}>
-                <ImLocation2 onClick={moveKey} className={props.image}/>
-            </div>
-            <div class={props.item}>
-                <ImLocation2 onClick={moveKey} className={props.image}/>
-            </div> */}
+          }
+        };
+        return updatedState;
+      });
+    }
+  };
+  return (
+    <div className={props.box}>
+      {[...Array(4)].map((_, index) => (
+        <div key={index} className={props.item}>
+          <ImLocation2
+            className={props.image}
+            onClick={() => moveKey(index + 1)}
+          />
         </div>
-        
-    )
+      ))}
+    </div>
+  );
 }
+
 export default Box;

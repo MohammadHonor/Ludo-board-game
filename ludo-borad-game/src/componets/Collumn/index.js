@@ -1,9 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import './style.css';
 import { ImLocation2 } from "react-icons/im";
-
 function Column(props){
-
+  
     return(
         <div id="clm1">
 
@@ -17,7 +16,6 @@ function Column(props){
                       <div key={index} className='sml-container' id={
                         isBlue ?"blue-color-bg" :isGreen ? 'green-color-bg':''
                       }>
-                        {/* <ImLocation2/> */}{index}
                       </div>
                     )
                 })

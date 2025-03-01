@@ -17,7 +17,6 @@ function Row(props){
             const isYellow = props.mid === 'yellow-color-bg' && [1, 4, 7, 13, 12,10].includes(index);
             return (
               <div key={index} className="sml-container" id={isRed ? 'red-color-bg' : isYellow ? 'yellow-color-bg' :''} >
-                {index}
               </div>
             )
           })

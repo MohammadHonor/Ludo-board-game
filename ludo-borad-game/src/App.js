@@ -4,17 +4,42 @@ import Box from "./componets/ButtonBox/index.js";
 import Column from "./componets/Collumn/index.js";
 import Row from "./componets/row/index.js";
 import { DiceBox } from "./componets/dice/diceBox.jsx";
-import { createContext } from "react";
+import { BoardContext } from "./Context.js/ludoBoardContext.js";
+import { useState } from "react";
 function App() {
-    const keyContext = createContext();
+  const [boardState, setBoardState] = useState({
+      green_button: {
+        first_icon: { x_coordinate: 0, y_coordinate: 0, left: 0, right: 0, top: 0, bottom: 0 },
+        second_icon: { x_coordinate: 0, y_coordinate: 0, left: 0, right: 0, top: 0, bottom: 0, },
+        third_icon: {x_coordinate: 0, y_coordinate: 0, left: 0, right: 0, top: 0, bottom: 0 },
+        fourth_icon: {x_coordinate: 0,y_coordinate: 0,left: 0,right: 0,top: 0,bottom:0,}
+      },
+      yellow_button: {
+        first_icon: { x_coordinate: 0, y_coordinate: 0, left: 0, right: 0, top: 0, bottom: 0 },
+        second_icon: { x_coordinate: 0, y_coordinate: 0, left: 0, right: 0, top: 0, bottom: 0, },
+        third_icon: {x_coordinate: 0, y_coordinate: 0, left: 0, right: 0, top: 0, bottom: 0 },
+        fourth_icon: { x_coordinate: 0, y_coordinate: 0, left: 0, right: 0, top: 0, bottom: 0, }
+      },
+      blue_button: {
+        first_icon: { x_coordinate: 0, y_coordinate: 0, left: 0, right: 0, top: 0, bottom: 0 },
+        second_icon: { x_coordinate: 0, y_coordinate: 0, left: 0, right: 0, top: 0, bottom: 0, },
+        third_icon: {x_coordinate: 0, y_coordinate: 0, left: 0, right: 0, top: 0, bottom: 0 },
+        fourth_icon: { x_coordinate: 0, y_coordinate: 0, left: 0, right: 0, top: 0, bottom: 0, }
+      },
+      red_button: {
+        first_icon: { x_coordinate: 0, y_coordinate: 0, left: 0, right: 0, top: 0, bottom: 0 },
+        second_icon: { x_coordinate: 0, y_coordinate: 0, left: 0, right: 0, top: 0, bottom: 0, },
+        third_icon: {x_coordinate: 0, y_coordinate: 0, left: 0, right: 0, top: 0, bottom: 0 },
+        fourth_icon: { x_coordinate: 0, y_coordinate: 0, left: 0, right: 0, top: 0, bottom: 0, }
+      },
+  })
     return (
-      <keyContext.Provider value={""}>
-            
+      <BoardContext.Provider value={{boardState,setBoardState}}>  
         <div className="container">
-            <div className="dice-box">
+            {/* <div className="dice-box">
             <DiceBox />
             <DiceBox/>
-            </div>
+            </div> */}
             <div className="first-row">
             <Box item={"key1"} box={"box1"} image={"blue-button"}/>
             <Row mid={"red-color-bg"}/>
@@ -30,12 +55,12 @@ function App() {
             <Row mid={"yellow-color-bg"} />
             <Box item={"key4"} box={"box4"} image={"green-button"}/>
           </div>
-          <div className="dice-box">
+          {/* <div className="dice-box">
             <DiceBox />
             <DiceBox/>
-            </div>
+            </div> */}
         </div>
-        </keyContext.Provider>
+        </BoardContext.Provider>
         
     );
 }

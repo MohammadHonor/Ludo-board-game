@@ -6,5 +6,32 @@
   background-color:white;
   border-radius:8px;
   justify-content:center;
-  place-items:center;
+  align-items:center;
+  position:relative;
 }
+
+.inner-container{
+  border:2px solid green;
+  position:relative;
+  animation:suffle 0.5s ease-in-out infinite;
+}
+
+@keyframes suffle{
+  0%{
+    transform:rotate(0deg);
+  }
+  25%{
+    transform:rotate(10deg);
+  }
+  50%{
+    transform:rotate(-10deg);
+  }
+  75%{
+    transform:rotate(10deg);
+  }
+  100%{
+    transform:rotate(10deg);
+  }
+}
+
+
